@@ -1,0 +1,37 @@
+# OS X Finder
+.DS_Store
+
+# Xcode/AppCode per-user config
+*.mode1
+*.mode1v3
+*.mode2v3
+*.perspective
+*.perspectivev3
+*.pbxuser
+*.xcworkspace/xcuserdata
+xcuserdata
+.idea
+
+# Build products
+build/
+*.o
+*.LinkFileList
+*.hmap
+
+# Automatic backup files
+*~.nib/
+*.swp
+*~
+*.dat
+*.dep
+
+# project related.
+
+rcpl/tools/*.json
+rcpl/tools/old
+rcpl/tools/oold
+rcpl/RPPlayerCompanionInfo/Documents
+rcpl/RPPlayerLoggerInfo/Documents
+rcpl/rcpl-Auxiliary.plist
+
+# EOF

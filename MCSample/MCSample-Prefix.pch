@@ -1,0 +1,31 @@
+//
+// Prefix header for all source files of the 'MCSample' target in the 'MCSample' project
+//
+
+#import <Availability.h>
+
+#ifndef __IPHONE_4_0
+#warning "This project uses features only available in iOS SDK 4.0 and later."
+#endif
+
+#define MCADDRESS "239.1.1.1"
+#define MCPORT 12345
+
+// Config
+
+// Client
+#define SEND_PACKET_TO_LOOPBACK
+#define SETUP_SEND_MULTICAST_IF_LO0
+#undef SETUP_SEND_MULTICAST_IF_EN0
+
+// Server
+#undef BIND_ACCEPT_INADDR
+#define BIND_ACCEPT_MULTICAST_IF_LO0
+#undef BIND_ACCEPT_MULTICAST_IF_EN0
+
+#ifdef __OBJC__
+  #import <UIKit/UIKit.h>
+  #import <Foundation/Foundation.h>
+#endif
+
+// EOF
